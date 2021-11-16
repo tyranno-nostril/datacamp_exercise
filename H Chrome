@@ -1,0 +1,9 @@
+## Open Anaconda Prompt
+## type below
+jupyter notebook --generate-config
+
+## Open ~/.jupyter/jupyter_notebook_config.py
+## Change << #c.NotebookApp.browser = '' >>
+import webbrowser
+webbrowser.register('chrome', None, webbrowser.GenericBrowser(u'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'))
+c.NotebookApp.browser = 'chrome'
